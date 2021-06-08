@@ -38,7 +38,7 @@ var Max = 100;
 var Bombe = 16;
 var fine = false
 
-while(array.length < Max - Bombe && !fine){
+while(arrayutente.length < Max - Bombe && !fine){
 var numeroutente = parseInt(prompt('inserisci numero'));
 if(!array.includes(numeroutente) && !arrayutente.includes(numeroutente) && !isNaN(numeroutente) && checkRange(Min,Max,numeroutente)){
     array.push(numeroutente);
