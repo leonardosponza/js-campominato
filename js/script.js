@@ -43,6 +43,19 @@ var numeroutente = parseInt(prompt('inserisci numero'));
 if(!array.includes(numeroutente) && !arrayutente.includes(numeroutente) && !isNaN(numeroutente) && checkRange(Min,Max,numeroutente)){
     array.push(numeroutente);
 }
-
-
+else if(arrayutente.includes(numeroutente)){
+    alert('il numero scelto è già stato usato in precedenza')
 }
+else if(isNaN(numUser)){
+    alert('il dato inserito non è un numero')
+}
+else if (checkRange(Min,Max,numeroutente)){
+    alert('il numero inserito non è tra i limiti imposti')
+}
+else{
+    alert('hai perso')
+    fine = true
+}
+}
+
+console.log(arrayutente);
