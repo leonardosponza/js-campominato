@@ -49,7 +49,7 @@ else if (arrayutente.includes(numeroutente)){
 else if (isNaN(numeroutente)){
     alert('il dato inserito non è un numero')
 }
-else if (checkRange(Min,Max,numeroutente)){
+else if (!checkRange(Min,Max,numeroutente)){
     alert('il numero inserito non è tra i limiti imposti')
 }
 else{
@@ -59,3 +59,5 @@ else{
 }
 
 console.log(arrayutente);
+
+console.log('hai inserito'+numeroutente+'numeri');
