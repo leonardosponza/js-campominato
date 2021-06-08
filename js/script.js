@@ -1,4 +1,4 @@
-// faccio 16 numeri che vanno da 1  a  100
+// faccio 16 numeri che vanno da 1  a  100 per le bombe!!!
 var array = [];
 
 while(array.length < 16){
@@ -18,7 +18,6 @@ console.log(array);
 
 // chiedo un numero da 1  a 100 e controllo che non sia ripetuto
 
-var numeroutente = parseInt(prompt('inserisci numero'));
 
 // if(array.includes(numeroutente)== true){
 
@@ -33,12 +32,17 @@ var numeroutente = parseInt(prompt('inserisci numero'));
 function checkRange(min,max,valore){
     return valore >= min && valore <= max;
 }
-
+var arrayutente = []
 var Min = 1;
 var Max = 100;
 var Bombe = 16;
+var fine = false
 
 while(array.length < Max - Bombe && !fine){
+var numeroutente = parseInt(prompt('inserisci numero'));
+if(!array.includes(numeroutente) && !arrayutente.includes(numeroutente) && !isNaN(numeroutente) && checkRange(Min,Max,numeroutente)){
+    array.push(numeroutente);
+}
 
-}if()
 
+}
