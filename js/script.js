@@ -40,13 +40,13 @@ var fine = false
 
 while(arrayutente.length < Max - Bombe && !fine){
 var numeroutente = parseInt(prompt('inserisci numero'));
-if(!array.includes(numeroutente) && !arrayutente.includes(numeroutente) && !isNaN(numeroutente) && checkRange(Min,Max,numeroutente)){
-    array.push(numeroutente);
+if (!arrayutente.includes(numeroutente) && !arrayutente.includes(numeroutente) && !isNaN(numeroutente) && checkRange(Min,Max,numeroutente)){
+    arrayutente.push(numeroutente);
 }
-else if(arrayutente.includes(numeroutente)){
+else if (arrayutente.includes(numeroutente)){
     alert('il numero scelto è già stato usato in precedenza')
 }
-else if(isNaN(numeroutente)){
+else if (isNaN(numeroutente)){
     alert('il dato inserito non è un numero')
 }
 else if (checkRange(Min,Max,numeroutente)){
