@@ -40,6 +40,7 @@ var fine = false
 
 while(arrayutente.length < Max - Bombe && !fine){
 var numeroutente = parseInt(prompt('inserisci numero'));
+    document.getElementById('user').innerHTML += numeroutente;
 if (!arrayutente.includes(numeroutente) && !arrayutente.includes(numeroutente) && !isNaN(numeroutente) && checkRange(Min,Max,numeroutente)){
     arrayutente.push(numeroutente);
 }
